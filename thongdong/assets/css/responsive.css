@@ -1,0 +1,115 @@
+/* thongdong/assets/css/responsive.css */
+/* Mục tiêu: không vỡ layout trên tablet/mobile, co giãn header/nav, grid về 1 cột */
+
+/* ========== <= 992px (tablet) ========== */
+@media (max-width: 992px) {
+  .container {
+    width: min(100% - 32px, 1100px);
+  }
+
+  /* Header (customer + admin nếu dùng chung class) */
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px 0;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .logo img {
+    height: 72px;
+  }
+
+  /* Các grid hay dùng */
+  .shop-controls {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .shop-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .checkout-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .settings-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+/* ========== <= 600px (mobile) ========== */
+@media (max-width: 600px) {
+  .container {
+    width: min(100% - 24px, 1100px);
+  }
+
+  .logo img {
+    height: 58px;
+  }
+
+  /* Buttons/link trong header */
+  .main-nav a,
+  .main-nav .btn {
+    font-size: 14px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 80px 0;
+  }
+  .hero-inner h1 {
+    font-size: 34px;
+  }
+  .hero-text {
+    font-size: 16px;
+  }
+
+  /* Shop */
+  .shop-controls {
+    grid-template-columns: 1fr;
+  }
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Card padding gọn hơn */
+  .card {
+    padding: 14px !important;
+  }
+
+  /* Bảng admin: cho phép scroll ngang nếu hẹp */
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Nút thao tác không dính nhau */
+  .actions,
+  .row-actions,
+  td .btn,
+  .btn-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  /* Form trong admin/customer */
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+.pd-actions { position: relative; z-index: 5; }
+.pd-actions button, .pd-actions a { position: relative; z-index: 50; pointer-events: auto; }

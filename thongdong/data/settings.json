@@ -1,0 +1,15 @@
+{
+    "store_name": "Thong Dong",
+    "tagline": "Nến thơm thuần Việt dành cho người Việt.",
+    "hotline": "0900 000 000",
+    "email": "hello@thongdong.vn",
+    "address": "Đà Nẵng, Việt Nam",
+    "bank_enabled": true,
+    "bank_name": "Vietcombank",
+    "bank_account": "0123456789",
+    "bank_holder": "THONG DONG",
+    "bank_note": "TD + SĐT",
+    "shipping_flat": 25000,
+    "free_ship_over": 500000,
+    "order_notice": "Đơn hàng sẽ được xác nhận trong giờ hành chính."
+}
